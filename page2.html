@@ -12,7 +12,6 @@
   <div class="row min-vh-100">
     <div class="col-12 col-md-4 min-vh-100">
       <form id="user-form">
-        <fieldset disabled>
           <legend>Library of Congress Search</legend>
           <div class="mb-3">
             <label for="Search" class="form-label"></label>
@@ -21,7 +20,7 @@
           <div class="mb-3">
             <label for ="format" class="form-label"></label>
             <select id="format" class="form-select" placeholder="Select a format...">
-                <option value="">Everything</option>
+                <option value="original-format:everything">Everything</option>
                 <option value="original-format:sound recording">Audio Recordings</option>
                 <option value="original-format:book">Books/Printed Material</option>
                 <option value="original-format:film, video">Films, Videos</option>
@@ -39,10 +38,9 @@
                 <option value="original-format:3d object">3D Objects</option>
             </select>
           </div>
-          <button type="submit" id="searchBtn" class="btn btn-primary">Search</button>
-          <button type="submit" id="backBtn" class="btn btn-primary">Go Back</button>
+          <button type="submit" value="submit" id="searchBtn" class="btn btn-primary">Search</button>
+          <button type="back" value="submit" id="backBtn" class="btn btn-primary">Go Back</button>
           </button>
-        </fieldset>
       </form>
     </div>
     <div class="col-12 col-md-8">
@@ -111,5 +109,6 @@
       </div>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
