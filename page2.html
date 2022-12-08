@@ -11,28 +11,22 @@
 <body>
   <div class="row min-vh-100">
     <div class="col-12 col-md-4 min-vh-100">
-      <form>
+      <form id="user-form">
         <fieldset disabled>
-          <legend>Disabled fieldset example</legend>
+          <legend>Library of Congress Search</legend>
           <div class="mb-3">
-            <label for="disabledTextInput" class="form-label">Disabled input</label>
-            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+            <label for="Search" class="form-label"></label>
+            <input type="text" id="search" class="form-control" placeholder="Search!">
           </div>
           <div class="mb-3">
-            <label for="disabledSelect" class="form-label">Disabled select menu</label>
-            <select id="disabledSelect" class="form-select">
-              <option>Disabled select</option>
+            <label for ="format" class="form-label"></label>
+            <select id="format" class="form-select" placeholder="Select a format...">
+              <option>Filters</option>
             </select>
           </div>
-          <div class="mb-3">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-              <label class="form-check-label" for="disabledFieldsetCheck">
-                Can't check this
-              </label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" id="searchBtn" class="btn btn-primary">Search</button>
+          <button type="submit" id="backBtn" class="btn btn-primary">Go Back</button>
+          </button>
         </fieldset>
       </form>
     </div>
